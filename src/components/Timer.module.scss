@@ -1,0 +1,46 @@
+.timer {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  align-items: center;
+  color: aliceblue;
+  background-color: lightslategray;
+
+  .controlWrapper {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  h2 {
+    margin: 0 0 20px 0;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  button {
+    border: 1px solid lightblue;
+    box-shadow: 0 3px 2px rgb(70, 80, 90);
+    transition: box-shadow 0.03s, scale 0.03s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid lightblue;
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: azure;
+    }
+
+    &:active {
+      scale: 98%;
+      box-shadow: 0 1px 1px rgb(70, 80, 90);
+    }
+  }
+}
